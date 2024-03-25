@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="X-CSRF-Token" content="{{.CSRFToken}}" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/upload.css" />
+    <link rel="stylesheet" href="/assets/css/nav.css" />
+    <script src="/assets/js/homepage.js"></script>
+  </head>
+  <body style="margin: 0;">
+    <div class="navbar">
+      <a href="/gallery/" class="btn">Gallery</a>
+      <a href="/upload/" class="btn">Upload</a>
+      <a href="/about/" class="btn">About Us</a>
+      <p id="username"></p>
+      <a href="/logout/" class="btn" id="log_out">log out</a>
+  </div >
+    <div class="upload-box" id="dropArea">
+      Drop your photo here or
+      <input
+        type="file"
+        id="fileInput"
+        style="display: none"
+        accept="image/*"
+      />
+      <!-- Added accept attribute to restrict to images -->
+      <button
+        class="upload-button"
+        onclick="document.getElementById('fileInput').click();"
+      >
+        Browse
+      </button>
+    </div>
+    <button id="submit-button">submit</button>
+    <!-- Modal Box -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <h2>Enter Title for the Photo</h2>
+        <input type="text" id="photoTitle" placeholder="Title" />
+        <textarea type="text" id="description" placeholder="Description"></textarea>
+        <button id="confirm-button">Confirm</button>
+      </div>
+    </div>
+    <script src="/assets/js/upload.js"></script>
+  </body>
+</html>

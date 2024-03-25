@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #333333;
+    overflow: hidden;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5vh;
+}
+
+.navbar .btn {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 3vw;
+    padding-top: 3vw;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.navbar .btn:hover {
+    color: greenyellow;
+    background-color: #404040;
+}
+
+#log_out {
+    margin-right: 1.5rem;
+}
+
+#username {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: auto;
+    padding-right: 1rem;
+    color: greenyellow;
+    font-weight: 900;
+    font-size: 2rem;
+}

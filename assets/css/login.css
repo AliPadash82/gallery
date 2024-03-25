@@ -1,0 +1,130 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Set height to 100% of viewport height */
+    width: 100vw; /* Set width to 100% of viewport width */
+    display: grid;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.decorative-line {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    transform: translateY(-18px);
+}
+
+#username_id {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 80px;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.input_box {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.input_boxes {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#heading {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styles */
+#signup_btn {
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+#signup_btn:hover {
+    background-color: #45a049; /* Darker green */
+    color: white;
+}
+
+/* Button styles */
+#login_btn {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    padding: 8px 18px;
+    border: 2px solid #4CAF50; /* Green border */
+    background-color: #ffffff; /* White background */
+    color: #4CAF50; /* Green text color */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+#login_btn:hover {
+    background-color: #f3faf3; /* Green background */
+    border-color: #45a049; /* Darker green border */
+    color: #77b97b;
+}
+
+
+#secondary_body {
+    position: absolute;
+    transform: translate(0, 50%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    height: 40%;
+    width: 100%;
+}
+
+input {
+    font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+/* Style for the input box when focused */
+input:focus {
+    border-color: #02f727; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 255, 81, 0.5); /* Add shadow on focus */
+}
+
+/* Style for the input box placeholder */
+input::placeholder {
+    color: #999; /* Placeholder text color */
+}
+
+.invalid-placeholder::placeholder {
+    color: red;
+}

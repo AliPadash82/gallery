@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" 
+    content="default-src 'self'; 
+             img-src 'self';
+             script-src 'self' 'sha256-x+/WlI5NlcASale+G6Knu+luKq1B5GhGkngFW5EJ2+s='; 
+             style-src 'self' https://fonts.googleapis.com;
+             font-src 'self' https://fonts.gstatic.com;
+             ">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/assets/css/homepage.css">
+    <link rel="stylesheet" href="/assets/css/nav.css">
+    <script src="/assets/js/homepage.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/gallery/" class="btn">Gallery</a>
+        <a href="/upload/" class="btn">Upload</a>
+        <a href="/about/" class="btn">About Us</a>
+        <p id="username">username</p>
+        <a href="/logout/" class="btn" id="log_out">log out</a>
+    </div>
+    <div class="footer">
+        <p id="welcome">Welcome To Padash Gallery!</p>
+    </div>
+</body>
+</html>

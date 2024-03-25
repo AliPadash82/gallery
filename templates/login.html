@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in page</title>
+  <link rel="stylesheet" href="/assets/css/login.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/assets/js/login.js"></script>
+</head>
+<body>
+  <!-- We are going to create a login page -->
+  <form id="secondary_body" method="POST">
+    <h1 id="heading">log in!</h1>
+    <div class="decorative-line"></div>
+    <input type="text" name="username" id="username_input" placeholder="username" />
+    <input type="password" name="password" id="password_input" placeholder="password" />
+    <input type="email" name="email" id="email_input" placeholder=" email" />
+    <input type="hidden" name="X-CSRF-Token" value="{{.CSRFToken}}">
+    <div id="buttons">
+      <button id="login_btn">log in</button>
+      <button type="submit" id="signup_btn">sign up</button>
+    </div>
+    <div class="decorative-line" style="transform: none; width: 75%; background-color: gainsboro;"></div>
+  </form>
+</body>
+</html>
